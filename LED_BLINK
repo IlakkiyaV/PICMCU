@@ -1,0 +1,11 @@
+void main() {
+  TRISC.F1 = 0;   // Set RC1 as output
+
+  // Blink LED 5 times
+  while(1) {
+    PORTC.F1 = 1;   // LED ON
+    Delay_ms(500);  // Wait 500 ms
+    PORTC.F1 = 0;   // LED OFF
+    Delay_ms(500);  // Wait 500 ms
+  }
+}
